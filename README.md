@@ -1,12 +1,62 @@
-### Tutorial for Mechanical Engineering students
+## Tutorials for Mechanical Engineering Students
 
-Some exposure to machine learning for mechanical engineering students.
+A hands-on introduction to machine learning for mechanical engineering students.
+These notebooks cover foundational ML concepts, failure analysis, and time-series
+analysis for remaining useful life (RUL) prediction — all in the context of
+machine health monitoring.
 
-These notebooks will introduce the foundational concepts of ML and then
-take you to failure analysis using ML, and then an advanced time-series
-analysis with ML.
+The notebooks are numbered and should be followed in order:
 
-The notebooks are named and ordered sequentially: start with 0 and go up to 2.
-You are free to explore and experiment within each notebook.
+| Notebook | Topic |
+|---|---|
+| `tut0_ml_foundations.ipynb` | Core ML concepts: bias-variance, overfitting, regularisation, cross-validation |
+| `tut1_failure_analysis.ipynb` | Failure classification using sensor data (AI4I 2020 dataset) |
+| `tut2_rul_timeseries.ipynb` | RUL prediction from time-series sensor data (NASA CMAPSS dataset) |
 
-In case of any issues, please let [me](mailto:tirtharaj@goa.bits-pilani.ac.in) know.
+You are encouraged to experiment within each notebook.
+
+### Setup
+
+Requires Python 3.9+. We recommend [Miniconda](https://docs.anaconda.com/miniconda/).
+
+**Create and activate an environment:**
+```shell
+conda create -n mech-ml python=3.11 -y
+conda activate mech-ml
+```
+
+**Install dependencies:**
+```shell
+pip install numpy pandas matplotlib seaborn scipy \
+            scikit-learn xgboost \
+            jupyter notebook ipykernel
+```
+
+**Register the environment as a Jupyter kernel:**
+```shell
+python -m ipykernel install --user --name mech-ml --display-name "Python (mech-ml)"
+```
+
+**Launch Jupyter:**
+```shell
+jupyter notebook
+```
+
+Once Jupyter opens in your browser, open a notebook and select
+**Kernel → Change kernel → Python (mech-ml)** before running any cells.
+
+**Verify your installation** by running this in any notebook cell:
+```python
+import numpy, pandas, matplotlib, seaborn, scipy, sklearn
+print("All good.")
+```
+
+No GPU is required. All notebooks run on a standard laptop with 4 GB RAM.
+
+### Queries
+
+For any issues or questions, please contact
+[Tirtharaj Dash](mailto:tirtharaj@goa.bits-pilani.ac.in),
+MAHI Lab, Department of CS & IS, BITS Pilani Goa Campus.
+
+Additional reading references are included at the end of each notebook.
