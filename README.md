@@ -57,6 +57,6 @@ No GPU is required. All notebooks run on a standard laptop with 4 GB RAM.
 
 For any issues or questions, please contact
 [Tirtharaj Dash](mailto:tirtharaj@goa.bits-pilani.ac.in),
-MAHI Lab, Department of CS & IS, BITS Pilani Goa Campus.
+[MAHI Lab](https://mahi-group.github.io), Department of CS & IS, BITS Pilani Goa Campus.
 
 Additional reading references are included at the end of each notebook.
